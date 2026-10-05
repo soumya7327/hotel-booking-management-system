@@ -120,40 +120,9 @@ src/
 └── test/
 ```
 
-## ⚙️ Setup
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/soumya7327/hotel-booking-management-system.git
-cd hotel-booking-management-system
-```
-
-2. Configure your local database and application settings.
-
-3. Create your local `application.properties` from your own environment configuration. The repository intentionally ignores the real `application.properties` file to avoid exposing secrets.
-
-4. Configure required credentials such as:
-   - PostgreSQL database details
-   - JWT secret
-   - Stripe secret key
-   - Stripe webhook secret
-
-5. Run the application with Maven:
-
-```bash
-./mvnw spring-boot:run
-```
-
-On Windows:
-
-```powershell
-./mvnw.cmd spring-boot:run
-```
-
 ## 🔐 Security
 
-Do not commit API keys, passwords, JWT secrets, database credentials, or webhook secrets to GitHub.
+Sensitive configuration such as API keys, passwords, JWT secrets, database credentials, and Stripe webhook secrets should not be committed to GitHub.
 
 ## 👨‍💻 Author
 
